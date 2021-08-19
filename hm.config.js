@@ -2,9 +2,9 @@ const path = require('path')
 module.exports = {
   type: 'react',
   webpack: {
-    entries: "src/entry.js",
+    entries: "example/entry.js",
     output: {
-      path: path.resolve(__dirname, './dist'),
+      path: path.resolve(__dirname, './demo'),
       filename: "[name].js"
     }
   }

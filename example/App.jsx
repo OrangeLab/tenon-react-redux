@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from 'tenon-react-redux';
+import { Provider } from '../src';
 import store from './store'
 import Counter from "./Counter";
 

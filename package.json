@@ -22,6 +22,7 @@
     "es"
   ],
   "scripts": {
+    "dev": "hummer dev",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "build:es": "babel src --out-dir es",
     "build:umd": "cross-env NODE_ENV=development rollup -c -o dist/react-redux.js",
@@ -37,14 +38,6 @@
   },
   "peerDependencies": {
     "react": "^16.8.3 || ^17"
-  },
-  "peerDependenciesMeta": {
-    "react-dom": {
-      "optional": true
-    },
-    "react-native": {
-      "optional": true
-    }
   },
   "dependencies": {
     "@babel/runtime": "^7.12.1",
@@ -86,7 +79,9 @@
     "glob": "^7.1.6",
     "jest": "^26.6.1",
     "prettier": "^2.1.2",
-    "react": "^16.14.0",
+    "@hummer/tenon-react": "^0.1.0",
+    "@reduxjs/toolkit": "^1.6.1",
+    "react": "^17.0.2",
     "react-test-renderer": "^16.14.0",
     "redux": "^4.0.5",
     "rimraf": "^3.0.2",

@@ -9,14 +9,13 @@ const env = process.env.NODE_ENV
 
 const config = {
   input: 'src/index.js',
-  external: Object.keys(pkg.peerDependencies || {}).concat('react-dom'),
+  external: Object.keys(pkg.peerDependencies || {}).concat('react'),
   output: {
     format: 'umd',
     name: 'ReactRedux',
     globals: {
       react: 'React',
       redux: 'Redux',
-      'react-dom': 'ReactDOM',
     },
   },
   plugins: [
