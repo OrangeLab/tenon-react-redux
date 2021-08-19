@@ -1,2 +1,5 @@
 /* eslint-disable import/no-unresolved */
-export { unstable_batchedUpdates } from 'react-dom'
+
+export function unstable_batchedUpdates(fn, bookkeeping) {
+  return fn(bookkeeping);
+}
